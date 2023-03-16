@@ -1,7 +1,7 @@
 import './App.css';
-import {ViewportSizeHook} from "./ViewportSizeHook";
+// import {ViewportSizeHook} from "./ViewportSizeHook";
 // import {FetchHook} from "./FetchHook";
-// import {LocalStorageHook} from "./LocalStorageHook";
+import {LocalStorageHook} from "./LocalStorageHook";
 // import {HoverHook} from "./HoverHook";
 
 function App() {
@@ -9,9 +9,9 @@ function App() {
         <div className="App">
             <header className="App-header">
                 {/*<FetchHook />*/}
-                {/*<LocalStorageHook />*/}
+                <LocalStorageHook />
                 {/*<HoverHook />*/}
-                <ViewportSizeHook />
+                {/*<ViewportSizeHook />*/}
             </header>
         </div>
     );

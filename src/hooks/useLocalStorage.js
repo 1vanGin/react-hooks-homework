@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 
 export function useLocalStorage(initialKey) {
     const [key, setKey] = useState(initialKey)
-    const [value, setValue] = useState(null);
+    const [value, setValue] = useState(window.localStorage.getItem(key));
 
     function setItem(newValue) {
         setValue(newValue)
